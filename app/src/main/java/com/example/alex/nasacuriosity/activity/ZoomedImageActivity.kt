@@ -14,6 +14,8 @@ class ZoomedImageActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_zoomed_image)
 
+    supportActionBar?.hide()
+
     photoView = findViewById(R.id.full_size_image)
 
     val imageUrl = intent.getStringExtra("Image_URL")
