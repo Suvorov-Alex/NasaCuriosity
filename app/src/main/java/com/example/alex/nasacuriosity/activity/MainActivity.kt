@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     photosContent.layoutManager = LinearLayoutManager(this)
     photosContent.adapter = adapter
     refreshLayout.setOnRefreshListener { updatePhotos() }
-    refreshLayout.setColorSchemeResources(android.R.color.holo_green_light, android.R.color.holo_orange_light, android.R.color.holo_red_light)
+    refreshLayout.setColorSchemeResources(android.R.color.holo_green_light, android.R.color.holo_orange_light)
   }
 
   override fun onAttachedToWindow() {
